@@ -39,7 +39,7 @@ def zipdir(source_path, dest_path):
     @param fileNanme: Name of the zip file that you want to the new file to be
     """
     try:
-    	os.makedirs(dest_path)
+    	os.makedirs(os.path.dirname(dest_path))
     except:
     	print("Zip Path Already Exists")
 
