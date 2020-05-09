@@ -87,26 +87,6 @@ def getImgForIds(img_id,images):
 
 	return img_list
 
-
-# def saveCocoFormat(info_json, description, licenses, categories, images, annotations, file_name):
-# 	root = {}
-# 	root['info'] = info_json
-# 	root['description'] = description
-# 	root['licenses'] = licenses
-# 	root['images'] = images
-# 	root['annotations'] = annotations
-
-# 	if type(categories) == list:
-# 		root_dict['categories'] = categories
-# 	else:
-# 		cat_ = []
-# 		cat_.append(categories)
-# 		root['categories'] = cat_
-
-# 	file = open(file_name,'w')
-# 	file.write(json.dumps(root))
-# 	file.close()
-
 category = getCatJson(categories,CATEGORY)
 cat_annot , img_id = getCatAnnot(category['id'],annotations,low_bound = low_bound, up_bound= upper_bound)
 img_list = getImgForIds(img_id,images)

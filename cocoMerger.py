@@ -21,29 +21,6 @@ file_2.close()
 
 
 def mergeLicenses(root_1, root_2):
-	"""
-	Merges the Licences json of the 2 JSON objects, and returns the merged License JSON
-	"""
-	# license_1 = root_1['licenses']
-	# license_2 = root_2['licenses']
-	# final_id = []
-	# dict_id = {}
-
-	# for l1 in license_1:
-	# 	final_id.append(l1['id'])
-	# 	dict_id[l1['id']] = l1
-
-	# for l2 in license_2:
-	# 	final_id.append(l2['id'])
-	# 	dict_id[l2['id']] = l2
-
-	# final_id = list(set(final_id))
-	# final_id.sort()
-
-	# final_license = []
-	# for id_ in final_id:
-	# 	final_license.append(dict_id[id_])
-
 	return mergeLists(root_1['licenses'], root_2['licenses'])
 
 def mergeImages(root_1, root_2):
